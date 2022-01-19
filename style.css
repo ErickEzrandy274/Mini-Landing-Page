@@ -1,0 +1,89 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body, main {
+    font-family: 'Oswald', sans-serif;
+}
+
+nav, #review {background-color: black;}
+.navbar-brand {width: 25%;}
+.nav-link.active, a.nav-link:hover {
+    color:#be3a1c !important;
+    transition: all 0.25s ease-in-out !important;
+}
+#text-review {color: whitesmoke;}
+
+#performance, #audio, #battery, #more {
+    color: whitesmoke;
+    background: linear-gradient(90deg,#00005C,#150485,#590995,#59057B);
+}
+
+.title {
+    background: url("https://dlcdnwebimgs.asus.com/files/media/2B37C5BC-FC31-4697-925A-6622E78C5CF9/v3/img/performance-linear.png") no-repeat center center;
+    background-size: cover;
+    transform: skew(-20deg);
+    margin-top: 100px;
+}
+
+.brief-text {
+    background: linear-gradient(to right,#568df2 0,#f01bcf 51%,#f01bcf 51%,#ff1d8b 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: 5px;
+}
+
+.full-description p, #os-text, .subtitle {color: #A2B29F;}
+
+.video {width: 25%;}
+#audio {background: linear-gradient(-135deg,#602080,#202060,#202040,#160F30);}
+#battery {background: linear-gradient(180deg,#BBE1FA,#3282B8,#0F4C75,#1B262C, black);}
+.custom-shape-divider-bottom-1628493447 {
+    position: absolute;
+    bottom: -.1rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1628493447 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 250px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1628493447 .shape-fill {
+    fill: #BBE1FA;
+}
+
+#more,footer {background: black;}
+#bottom-text {color: whitesmoke;}
+
+@media (max-width: 992px) {
+    .navbar-brand, .video {width: 50%;}
+    .full-description { width: 60% !important; }
+    .inner-more { width: 85% !important; }
+}
+
+@media (max-width: 768px) { 
+    .video {width: 70%; margin: 1.25rem auto; }
+}
+
+@media screen and (max-width: 576px) {
+    .full-description{ width: 75% !important; }
+    .inner-more { width: 95% !important; }
+    .video {width: 80%; margin: .75rem auto; }
+}
+
+@media screen and (max-width: 400px) {
+    .full-description { width: 85% !important; }
+    .inner-more { width: 105% !important; }
+    .video {width: 85%; margin: .75rem 1rem; }
+}
